@@ -1,1 +1,0 @@
-Start Wordpress Docker image
