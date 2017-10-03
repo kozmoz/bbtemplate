@@ -1,0 +1,131 @@
+
+.content-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.carousel-title {
+  margin-top: 100px;
+}
+
+.owl-carousel {
+  // max-width: 1140px;
+  // margin:0 auto;
+  margin-top: 43px;
+  width: 100%;
+  height: 300px;
+
+  .owl-stage-outer {
+    height: 100%;
+    .owl-stage {
+      height: 100%;
+      .owl-item {
+        height: 100%;
+        .item {
+          height: 100%;
+          position: relative;
+          @include background-image();
+          &.nijverdal {
+            background-image: url(../images/nijverdal.jpg);
+          }
+          &.hellendoorn {
+            background-image: url(../images/hellendoorn.jpg);
+          }
+          &.haarle {
+            background-image: url(../images/haarle.jpg);
+          }
+          &.daarleveen {
+            background-image: url(../images/daarleveen.jpg);
+          }
+          &.daarle {
+            background-image: url(../images/daarle.jpg);
+          }
+          &.marle {
+            background-image: url(../images/marle.jpg);
+          }
+          &.hulsen {
+            background-image: url(../images/hulsen.jpg);
+          }
+          .place-name {
+            @include positioning-center-center();
+            @include transition(300ms);
+
+          }
+
+          &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            background-image: url(../images/background-before.png);
+            @include background-image();
+
+            @include transition(300ms);
+          }
+
+          &:hover:before {
+            @media (min-width: 441px){
+              height: 20%;
+              top: 80%;
+            }
+          }
+
+          &:hover {
+            .place-name {
+              @media (min-width: 441px){
+                top: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .owl-nav {
+    .owl-prev {
+      position: relative;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      background-color: $blue;
+      @include transition(300ms);
+      &:hover {
+        background-color: $oker;
+      }
+      .left {
+        @include positioning-center-center();
+        @include background-image();
+        background-size: contain;
+        background-image: url("../images/left.png");
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .owl-next {
+      position: relative;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      background-color: $blue;
+      @include transition(300ms);
+      &:hover {
+        background-color: $oker;
+      }
+      .right {
+        @include positioning-center-center();
+        @include background-image();
+        background-size: contain;
+        background-image: url("../images/right.png");
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+#home {
+  text-align: center;
+}
