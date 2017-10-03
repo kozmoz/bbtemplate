@@ -1,0 +1,57 @@
+
+
+.fractie-lid-container {
+  margin-bottom: 50px;
+  position: relative;
+  @include transition(500ms);
+  @media (max-width: 480px) {
+    margin-bottom: 110px;
+  }
+
+  .avatar-image {
+    height: 300px;
+    width: 100%;
+
+    @include background-image();
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+      width: 300px;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  .avatar-info {
+    max-height: 220px;
+    overflow: hidden;
+    @include transition(500ms);
+
+    h3 {
+      text-align: left;
+      margin-top: 0;
+    }
+  }
+  .btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include transition(500ms);
+    @media (max-width: 480px) {
+      bottom: -60px;
+    }
+
+  }
+  &.open {
+    margin-bottom: 110px;
+    .avatar-info {
+      max-height: 1000px;
+    }
+    .btn {
+      bottom: -60px;
+      @media (max-width: 768px) {
+        bottom: -80px;
+      }
+    }
+  }
+}
