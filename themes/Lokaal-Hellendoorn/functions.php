@@ -122,7 +122,7 @@ add_action( 'admin_menu', 'remove_menus' );
 function custom_login_logo() {
     echo '<style type="text/css">
 	h1 a {
-	  background-image: url('.get_bloginfo('template_directory').'/images/logo.png) !important;
+	  background-image: url('.get_bloginfo('template_directory').'/images/logo2.png) !important;
 	  width: 100%!important;
 	  height: 150px!important;
 	  background-size: contain!important;
