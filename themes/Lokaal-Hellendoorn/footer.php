@@ -4,6 +4,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                    <?php
+                    /*
+                     * MailChimp's nieuwsbrief; inschrijven.
+                     *
                     <form>
                         <h2>Schrijf je in voor onze nieuwsbrief.</h2>
                         <div class="form-group">
@@ -30,6 +34,7 @@
                             </script>
                         </div>
                     </form>
+                    */ ?>
                 </div>
             </div>
         </div>
