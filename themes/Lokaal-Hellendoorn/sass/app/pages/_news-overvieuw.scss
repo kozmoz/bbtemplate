@@ -1,0 +1,156 @@
+
+.zoekveld-container {
+	text-align: center;
+	margin-bottom: 50px;
+	.zoekveld {
+		display: table;
+		margin: 0 auto;
+		.search {
+			height: 50px;
+			float: left;
+			border: 1px solid $blue;
+			border-right: none;
+			width: 50px;
+			position: relative;
+			&:before {
+				content: '';
+				@include positioning-center-center();
+				@include background-image();
+				height: 30px;
+				width: 30px;
+				background-image: url("../images/zoek.png");
+			}
+		}
+		input {
+			float: left;
+			height: 50px;
+			border: 1px solid $blue;
+			&:active {
+				outline: none;
+				color: $blue;
+			}
+			&:focus {
+				outline: none;
+				color: $blue;
+			}
+			&:first-of-type {
+				border-right: none;
+				@media (max-width: 320px) {
+					width: 150px;
+				}
+			}
+		}
+		.btn {
+			padding: 6px 12px;
+		}
+	}
+}
+
+
+.news-container {
+	position: relative;
+	.news-item {
+		width: 100%;
+		height: 300px;
+		position: relative;
+		background-position: center center !important;
+		background-size: cover !important;
+		margin-bottom: 30px;
+		-webkit-box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.2);
+		@include transition(300ms);
+
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(../images/background-before.png);
+			@include background-image();
+			@include transition(300ms);
+		}
+
+		.news-item-title {
+			@include positioning-center-center();
+			h3 {
+				font-size: 20px;
+				color: #fff;
+			}
+			p {
+				max-width: 100%;
+				overflow: ellipse;
+			}
+		}
+	}
+
+	a {
+		position: absolute;
+		bottom: 20px;
+		@include positioning-center();
+
+		button {
+			font-weight: bold;
+			padding: 15px 20px;
+			border: 2px solid;
+			border-color: #fff;
+			background: transparent;
+			color: #fff;
+			border-radius: 0;
+			text-transform: capitalize;
+			@include transition(300ms);
+			&:hover {
+				background-color: $blue;
+				color: #fff;
+				border-color: $blue ;
+			}
+			@media (max-width: 440px) {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.news-highlight {
+	width: 100%;
+
+	.news-item-previeuw {
+		margin-bottom: 50px;
+
+		p {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+
+	}
+
+	.news-item-image {
+
+		height: 335px;
+		width: 100%;
+		@include background-image();
+		@media (max-width: 767px) {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.btn-container {
+	text-align: center;
+	.btn {
+		&.done {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+		&.loading {
+			cursor: wait;
+			opacity: 0.5;
+			.loader {
+				display: block;
+			}
+		}
+	}
+}
