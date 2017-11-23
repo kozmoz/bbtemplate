@@ -47,7 +47,7 @@
                         <div class="table">
                             <div class="table-row">
                                 <div class="table-cel"><p>Tel :</p></div>
-                                <div class="table-cel"><a href="tel:12345678">123456789</a></div>
+                                <div class="table-cel"><a href="tel:‭+31548655786‬">‭(0548) 65 57 86‬</a></div>
                             </div>
                             <div class="table-row">
                                 <div class="table-cel"><p>E-mail :</p></div>
