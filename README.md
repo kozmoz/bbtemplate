@@ -1,2 +1,1 @@
-# bbtemplate
-Burger Belang template
+Lokaal Hellendoorn Wordpress Template
