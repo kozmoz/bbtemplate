@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+
+  db:
+    # https://hub.docker.com/_/mariadb/
+    image: mariadb:10.1
+    container_name: lh_mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: 8yctovCrlAutl8
+    ports:
+      - 3307:3306
+    volumes:
+      - ~/.lokaalhellendoorn/mysql:/var/lib/mysql
+    restart: always
+
+
+  wordpress:
+    image: wordpress:4.9.0-php7.1-apache
+    container_name: lh_wordpress
+    depends_on:
+      - db
+    ports:
+      - "8005:80"
+    volumes:
+      - ~/.lokaalhellendoorn/wp-content/uploads:/var/www/html/wp-content/uploads
+      - ./../themes/Lokaal-Hellendoorn:/var/www/html/wp-content/themes/Lokaal-Hellendoorn
+      - ./../plugins/acf-repeater:/var/www/html/wp-content/plugins/acf-repeater
+      - ./../plugins/advanced-custom-fields:/var/www/html/wp-content/plugins/advanced-custom-fields
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_PASSWORD: 8yctovCrlAutl8
+    restart: always
+
