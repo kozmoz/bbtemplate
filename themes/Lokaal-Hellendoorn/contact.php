@@ -58,7 +58,7 @@ Template Name: Contact pagina
         <div class="col-xs-12">
             <h2>Of bel ons</h2>
             <div class="phone-number">
-                <img src="<?php bloginfo('template_directory'); ?>/images/phone.png" alt="telefoon"><a href="tel:18475555555">1-847-555-5555</a>
+                <img src="<?php bloginfo('template_directory'); ?>/images/phone.png" alt="telefoon"><a href="tel:‭+31548655786‬">‭(0548) 65 57 86‬</a>
             </div>
         </div>
     </div>

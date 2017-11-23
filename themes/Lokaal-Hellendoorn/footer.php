@@ -81,7 +81,7 @@
                       <div class="col-xs-12 col-sm-4">
                         <ul class="social-icons">
                             <a href="/home"><li><img src="<?php bloginfo('template_directory'); ?>/images/facebook-icon.png" alt="facebook-icon"></li></a>
-                            <a href="/home"><li><img src="<?php bloginfo('template_directory'); ?>/images/twitter-icon.png" alt="twitter-icon"></li></a>
+                            <?php /* <a href="/home"><li><img src="<?php bloginfo('template_directory'); ?>/images/twitter-icon.png" alt="twitter-icon"></li></a> */ ?>
                         </ul>
                     </div>
                 </div>
