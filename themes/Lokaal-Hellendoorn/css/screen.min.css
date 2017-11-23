@@ -7917,7 +7917,7 @@ input:active {
 .table .table-row .table-cel {
   display: table-cell;
   width: 25%;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   padding: 20px;
   font-size: 20px;
   font-weight: 300;
