@@ -41,7 +41,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="logo-header">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/logo2.png">
+                    <a href="/"><img src="<?php bloginfo('template_directory'); ?>/images/logo2.png"></a>
                 </div>
                  <nav class="main-nav">
                     <ul>
