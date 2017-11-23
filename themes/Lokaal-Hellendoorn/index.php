@@ -38,10 +38,10 @@ Template Name: Homepagina
         </div>
     </a>
 
-    <a href="/daarleveen">
-        <div class="item daarleveen">
+    <a href="/daarlerveen">
+        <div class="item daarlerveen">
             <div class="place-name ">
-                <h4>Daarleveen</h4>
+                <h4>Daarlerveen</h4>
             </div>
         </div>
     </a>
