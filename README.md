@@ -21,9 +21,15 @@ To start the development environment Wordpress backend
 
 Start watching for JavaScript and CSS changes:
 
-    $ cd themes/Lokaal-Hellendoorn/_grunt
+    $ cd themes
     $ npm install
-    $ grunt 
+    $ npm run serve 
+
+Build the Wordpress template zip:
+
+    $ cd themes
+    $ npm install
+    $ npm run build
 
 
 ## MariaDB

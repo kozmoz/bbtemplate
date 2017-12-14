@@ -1,0 +1,19 @@
+{
+  "name": "lokaal-hellendoorn",
+  "description": "Lokaal Hellendoorn Wordpress Theme",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-sass": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "serve": "grunt",
+    "build": "rm lokaal-hellendoorn.zip > /dev/null 2>&1; grunt build && zip -r lokaal-hellendoorn.zip Lokaal-Hellendoorn -x *sass*"
+  }
+}
