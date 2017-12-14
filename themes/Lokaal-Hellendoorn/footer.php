@@ -80,7 +80,7 @@
                     </div>
                       <div class="col-xs-12 col-sm-4">
                         <ul class="social-icons">
-                            <a href="/home"><li><img src="<?php bloginfo('template_directory'); ?>/images/facebook-icon.png" alt="facebook-icon"></li></a>
+                            <li><a href="https://www.facebook.com/Lokaal-Hellendoorn-929777030508070/" target="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/facebook-icon.png" alt="Facebook" title="Lokaal Hellendoorn op Facebook"></a></li>
                             <?php /* <a href="/home"><li><img src="<?php bloginfo('template_directory'); ?>/images/twitter-icon.png" alt="twitter-icon"></li></a> */ ?>
                         </ul>
                     </div>

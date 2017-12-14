@@ -3,12 +3,28 @@
 
 ## Development
 
+### Installation
+
+* Install npm (https://www.npmjs.com)
+* Install Docker (https://www.docker.com, Download and install the installer)
+* Install SASS (http://sass-lang.com/install, sudo gem install sass --no-user-install)
+
+
+### Start the environment
+
 To start the development environment Wordpress backend 
 (Docker needs to be installed and running):
 
     $ cd docker
     $ docker-compose -f docker-compose-development.yml up
     $ open in browser: http://localhost:8005/
+
+Start watching for JavaScript and CSS changes:
+
+    $ cd themes/Lokaal-Hellendoorn/_grunt
+    $ npm install
+    $ grunt 
+
 
 ## MariaDB
 
