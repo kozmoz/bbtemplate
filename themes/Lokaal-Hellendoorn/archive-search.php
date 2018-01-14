@@ -6,7 +6,8 @@
 
 <div class="hero-image searchResults">
     <div class="content">
-        <h1>Zoek resultaten voor : <?php echo "$s"; ?> </h1>
+        <h1>Zoekresultaten voor: <br />
+            <?php echo htmlspecialchars($s, ENT_NOQUOTES, 'UTF-8'); ?> </h1>
     </div>
 </div>
 
@@ -35,7 +36,7 @@
                         echo ( '<div class="container">' );
                         echo ( '<div class="row">' );
                         echo ( '<div class="col-xs-12">' );
-                        echo ( '<h2> Sorry, er zijn geen resultaten <h2>' );
+                        echo ( '<h2>Helaas, er zijn geen resultaten</h2>' );
                         echo ( '</div>' );
                         echo ( '</div>' );
                         echo ( '</div>' );
