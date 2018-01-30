@@ -53,7 +53,7 @@ Template Name: News pagina
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div class = "news-item-image" style="background:url('<?php the_field('nieuws_afbeelding');?>')">
+                    <div class = "news-item-image" style="background-image:url('<?php the_field('nieuws_afbeelding');?>')">
                     </div>
                 </div>
 

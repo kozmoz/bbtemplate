@@ -32,10 +32,10 @@
             background-image: url(../images/hellendoorn.jpg);
           }
           &.haarle {
-            background-image: url(../images/haarle.jpg);
+            background-image: url(../images/Haarle.jpg);
           }
-          &.daarlerveen {
-            background-image: url(../images/daarlerveen.jpg);
+          &.daarleveen {
+            background-image: url(../images/daarleveen.jpg);
           }
           &.daarle {
             background-image: url(../images/daarle.jpg);
@@ -45,6 +45,9 @@
           }
           &.hulsen {
             background-image: url(../images/hulsen.jpg);
+          }
+          &.egede {
+            background-image: url(../images/Hancate.jpg);
           }
           .place-name {
             @include positioning-center-center();

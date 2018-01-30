@@ -17,7 +17,8 @@ Template Name: Fractie pagina
         $args = array(
             'post_type' => 'fractie',
             'post_status'=>"publish",
-            'orderby'=>"date"
+            'orderby'=>"date",
+            'posts_per_page' => -1
         );
         $nieuws = new WP_Query( $args );
         if( $nieuws->have_posts() ) {

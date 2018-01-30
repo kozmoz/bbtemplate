@@ -38,10 +38,10 @@ Template Name: Homepagina
         </div>
     </a>
 
-    <a href="/daarlerveen">
-        <div class="item daarlerveen">
+    <a href="/daarleveen">
+        <div class="item daarleveen">
             <div class="place-name ">
-                <h4>Daarlerveen</h4>
+                <h4>Daarleveen</h4>
             </div>
         </div>
     </a>
@@ -82,6 +82,17 @@ Template Name: Homepagina
         <div class="item nijverdal">
             <div class="place-name ">
                 <h4>Nijverdal</h4>
+            </div>
+        </div>
+    </a>
+    <a href="/egede">
+        <div class="item egede">
+            <div class="place-name ">
+                <h4>Egede,<br>
+                    Hancate,<br>
+                    Eelen <br>
+                    en Rhaan
+                </h4>
             </div>
         </div>
     </a>
