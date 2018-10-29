@@ -20,10 +20,16 @@ if ( $_SERVER["REQUEST_METHOD"] == "POST" ) {
 	$mail->isHTML( true );                                  // Set email format to HTML
 
 	// Get the form fields and remove whitespace.
-	$name        = trim( $_POST["name"] );
+	$name        = trim( $_POST["field1"] );
 	$email       = filter_var( trim( $_POST["email"] ), FILTER_SANITIZE_EMAIL );
 	$phoneNumber = trim( $_POST["phonenumber"] );
 	$message     = trim( $_POST["message"] );
+
+	// Used for spam detection.
+    // If this hidden field is filled, reject the message.
+    if (isset($_POST["name"]) && $_POST["name"] != '') {
+        return;
+    }
 
 	ob_start();
 

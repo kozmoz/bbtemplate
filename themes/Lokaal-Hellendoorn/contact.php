@@ -23,15 +23,15 @@ Template Name: Contact pagina
         <div class="form-group row">
             <div class="col-xs-12">
 
-                <input name="name" class="form-control" type="text">
-                <label for="example-text-input" class="col-xs-12 col-sm-6 col-form-label">Naam</label>
+                <input id="field1" name="field1" class="form-control" type="text">
+                <label for="field1" class="col-xs-12 col-sm-6 col-form-label">Naam</label>
 
             </div>
         </div>
         <div class="form-group row">
             <div class="col-xs-12">
-                <input name="email" class="form-control" type="text">
-                <label for="example-text-input" class="col-xs-12 col-form-label">E-mail</label>
+                <input is="email" name="email" class="form-control" type="text">
+                <label for="email" class="col-xs-12 col-form-label">E-mail</label>
 
             </div>
         </div>
@@ -44,8 +44,15 @@ Template Name: Contact pagina
         </div>
         <div class="form-group row">
             <div class="col-xs-12">
-                <textarea name="message" class="form-control" type="text"></textarea>
-                <label for="example-text-input" class="col-xs-12 col-form-label">Bericht</label>
+                <textarea id="message" name="message" class="form-control" type="text"></textarea>
+                <label for="message" class="col-xs-12 col-form-label">Bericht</label>
+            </div>
+        </div>
+        <div class="form-group row" style="display:none">
+            <div class="col-xs-12">
+                <input id="name" name="name" class="form-control" type="text">
+                <label for="name" class="col-xs-12 col-form-label">Name</label>
+
             </div>
         </div>
         <div class="button-container">

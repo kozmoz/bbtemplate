@@ -89,6 +89,6 @@
         </div>
     </div>
 </footer>
-<script type="text/javascript" async src="<?php bloginfo('template_directory'); ?>/js/min/app.min.js?v0.0.6"></script>
+<script type="text/javascript" async src="<?php bloginfo('template_directory'); ?>/js/min/app.min.js?v0.0.7"></script>
 </body>
 </html>

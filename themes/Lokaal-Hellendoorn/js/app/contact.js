@@ -3,7 +3,7 @@
 $('#contactForm').validate({
     ignore: '.ignore',
     rules: {
-        name: {
+        field1: {
             required: true,
             minlength: 2
         },
@@ -22,21 +22,21 @@ $('#contactForm').validate({
     },
     messages: {
 
-        name: {
+        field1: {
             required: 'Vul je voornaam in',
-            minlength: 'Vul een voornaam in met minimaal 2 karakters'
+            minlength: 'Vul een voornaam in met minimaal 2 letters'
         },
         lastname: {
             required: 'Vul je achternaam',
-            minlength: 'Vul een achternaam in met minimaal 2 karakters'
+            minlength: 'Vul een achternaam in met minimaal 2 letters'
         },
         email: {
             required: 'Vul je e-mailadres in',
-            email: 'Vul een geldig e-mailadres in',
+            email: 'Vul een geldig e-mailadres in'
         },
         message: {
             required: 'Stuur een bericht',
-            minlength: 'Vul een vraag in met minimaal 2 karakters'
+            minlength: 'Vul een vraag in met minimaal 2 letters'
         }
 
     },
