@@ -16,7 +16,7 @@ services:
 
 
   wordpress:
-    image: wordpress:4.9.0-php7.1-apache
+    image: wordpress:5.2.2-php7.1-apache
     container_name: lh_wordpress
     depends_on:
       - db
