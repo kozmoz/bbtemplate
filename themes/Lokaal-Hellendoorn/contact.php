@@ -7,7 +7,7 @@ Template Name: Contact pagina
 
 <div class="hero-image" style="background-image:url('<?php the_field('header_image') ?>')">
     <div class="content">
-        <h1><?php the_title();?></h1>
+        <h1><?php the_title(); ?></h1>
     </div>
 </div>
 
@@ -63,9 +63,18 @@ Template Name: Contact pagina
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <h2>Of bel ons</h2>
+
             <div class="phone-number">
-                <img src="<?php bloginfo('template_directory'); ?>/images/phone.png" alt="telefoon"><a href="tel:‭+31548655786‬">‭(0548) 65 57 86‬</a>
+
+                <img src="<?php bloginfo('template_directory'); ?>/images/phone.png" alt="telefoon"/>
+
+                <?php
+                $post = get_post();
+                $page_object = get_page($post->ID);
+                $page_content = $page_object->post_content;
+                echo $page_content;
+                ?>
+
             </div>
         </div>
     </div>
