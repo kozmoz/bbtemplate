@@ -27,11 +27,18 @@ Start watching for JavaScript and CSS changes:
     $ npm install
     $ npm run serve 
 
+
+## Build and Deploy Wordpress Theme
+
+Update the version number in package.json.
+
 Build the Wordpress template zip:
 
     $ cd themes
     $ npm install
     $ npm run build
+
+Upload the theme zip `lokaal-hellendoorn.zip` file to the hosting service.
 
 
 ## MariaDB
