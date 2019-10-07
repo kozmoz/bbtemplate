@@ -8740,6 +8740,11 @@ form .succes-message {
   }
 }
 
+.bestuur table th, .bestuur table td {
+  font-size: 20px;
+  padding: 20px !important;
+}
+
 .top-content {
   margin-bottom: 50px;
   margin-top: 50px;

@@ -1,9 +1,12 @@
 <?php
-/*
-Template Name: Bestuur pagina
-*/
+
+/**
+ * Template Name: Bestuur pagina
+ */
+
+get_header();
+
 ?>
-<?php get_header(); ?>
 
 <div class="hero-image" style="background-image:url('<?php the_field('header_image') ?>')">
     <div class="content">
@@ -18,30 +21,28 @@ Template Name: Bestuur pagina
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container bestuur">
     <div class="row">
-        <div class="col-xs-12">
-            <div class="table">
-                <div class="table-row head">
-                    <div class="table-cel">naam</div>
-                    <div class="table-cel">functie</div>
-                    <div class="table-cel">nummer</div>
-                    <div class="table-cel">email</div>
-                </div>
-
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Naam</th>
+                        <th>Functie</th>
+                    </tr>
+                </thead>
+                <tbody>
                 <?php
                 if( have_rows('bestuursleden') ):
                     while ( have_rows('bestuursleden') ) : the_row();?>
-                        <div class="table-row">
-                            <div class="table-cel"><?php the_sub_field('naam') ?></div>
-                            <div class="table-cel"><?php the_sub_field('functie') ?></div>
-                            <div class="table-cel"><a href="tel:<?php the_sub_field('nummer') ?>"><?php the_sub_field('nummer') ?></a></div>
-                            <div class="table-cel"><a <a href="mailto:<?php the_sub_field('email') ?>"><?php the_sub_field('email') ?></a></a></div>
-                        </div>
+                        <tr>
+                            <td><?php the_sub_field('naam') ?></td>
+                            <td><?php the_sub_field('functie') ?></div>
+                        </tr>
                     <?php endwhile;
                 endif; ?>
-                </div>
-            </div>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

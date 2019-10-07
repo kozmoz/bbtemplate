@@ -14,9 +14,10 @@ services:
       - ~/.lokaalhellendoorn/mysql:/var/lib/mysql
     restart: always
 
-
+  # https://hub.docker.com/_/wordpress
   wordpress:
-    image: wordpress:5.2.2-php7.1-apache
+    # Same PHP version as life website
+    image: wordpress:5.2.3-php7.3-apache
     container_name: lh_wordpress
     depends_on:
       - db

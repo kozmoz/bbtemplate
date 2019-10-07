@@ -5,6 +5,8 @@
 
 ### Installation
 
+Installation process in summary:
+
 * Install npm (https://www.npmjs.com)
 * Install Docker (https://www.docker.com, Download and install the installer)
 * Install SASS (http://sass-lang.com/install, sudo gem install sass --no-user-install)
