@@ -38,7 +38,11 @@ Build the Wordpress template zip:
     $ npm install
     $ npm run build
 
-Upload the theme zip `lokaal-hellendoorn.zip` file to the hosting service.
+New install: Upload the theme zip `lokaal-hellendoorn.zip` within Wordpress -> Themes -> Add
+
+In case of theme update: 
+ * Install plugin "Update Theme and Plugins from Zip File"
+ * Upload the theme zip `lokaal-hellendoorn.zip` within Wordpress -> Themes -> Add 
 
 
 ## MariaDB
