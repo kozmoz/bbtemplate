@@ -1,6 +1,12 @@
+2019-10-10 - Version 1.4.3 
+==========================
+* Fix "Laad Meer" news button 
+
+
 2019-10-08 - Version 1.4.2 
 ==========================
 * Auto version number for stylesheet, to prevent cached stylesheet 
+
 
 2019-10-07 - Version 1.4.1 
 ==========================
