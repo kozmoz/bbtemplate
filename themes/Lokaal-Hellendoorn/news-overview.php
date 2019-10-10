@@ -40,7 +40,7 @@ Template Name: News pagina
 
 <div class="container">
     <div class="row">
-        <div class="news-highlight">
+        <div class="news-highlight post-list">
             <?php
             $args = array('post_status' => "publish", 'post_type' => "nieuws", 'orderby' => "date", 'posts_per_page' => 1);
             $lastposts = get_posts($args);
@@ -61,9 +61,6 @@ Template Name: News pagina
 
 
             <?php endforeach; ?>
-
-            <?php /* Placeholder for (ajax) posts target.  */ ?>
-            <div class="post-list"></div>
 
         </div>
     </div>
