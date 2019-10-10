@@ -100,13 +100,13 @@ $('.ajax_load_more_news:not(.loading)').click(function () {
 
                 if ( response.length != 0 ) {
                     that.data('page', newPage);
-                    $('.post-list').append(response);
+                    $('.news-container').append(response);
                     that.removeClass('loading');
 
                 } else {
 
                     that.removeClass('loading');
-                    that.html("alle nieuws berichten zijn geladen");
+                    that.html("Alle nieuwsberichten zijn geladen.");
                     that.addClass('done');
                 }
 

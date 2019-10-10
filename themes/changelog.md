@@ -1,4 +1,4 @@
-2019-10-10 - Version 1.4.4
+2019-10-10 - Version 1.4.5
 ==========================
 * Fix "Laad Meer" news button 
 
