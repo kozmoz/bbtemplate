@@ -71,7 +71,9 @@ function doStuff() {
     });
 }
 
-//load more
+/**
+ * "Load More" button on the news page.
+ */
 $('.ajax_load_more_news:not(.loading)').click(function () {
 
     var that = $(this);
