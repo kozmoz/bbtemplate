@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2020-04-30 - Version 1.5.1
+==========================
+* Update styling for newer Wordpress 5.4.1 
+
+
 2020-04-29 - Version 1.5.0
 ==========================
 * Created new page template compatible with WP Gutenberg block editor 
