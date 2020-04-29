@@ -17,8 +17,7 @@ Installation process in summary:
 To start the development environment Wordpress backend 
 (Docker needs to be installed and running):
 
-    $ cd docker
-    $ docker-compose -f docker-compose-development.yml up
+    $ docker-compose up
     $ open in browser: http://localhost:8005/
 
 Start watching for JavaScript and CSS changes:

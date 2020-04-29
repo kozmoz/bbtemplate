@@ -25,11 +25,10 @@ services:
       - "8005:80"
     volumes:
       - ~/.lokaalhellendoorn/wp-content/uploads:/var/www/html/wp-content/uploads
-      - ./../themes/Lokaal-Hellendoorn:/var/www/html/wp-content/themes/Lokaal-Hellendoorn
-      - ./../plugins/acf-repeater:/var/www/html/wp-content/plugins/acf-repeater
-      - ./../plugins/advanced-custom-fields:/var/www/html/wp-content/plugins/advanced-custom-fields
+      - ./themes/Lokaal-Hellendoorn:/var/www/html/wp-content/themes/Lokaal-Hellendoorn
+      - ./plugins/acf-repeater:/var/www/html/wp-content/plugins/acf-repeater
+      - ./plugins/advanced-custom-fields:/var/www/html/wp-content/plugins/advanced-custom-fields
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: 8yctovCrlAutl8
     restart: always
-

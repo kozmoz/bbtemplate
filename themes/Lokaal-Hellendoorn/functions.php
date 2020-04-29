@@ -181,4 +181,57 @@ function template_chooser($template)
 add_filter('template_include', 'template_chooser');
 
 
+if (!function_exists('bb_setup')) :
+
+    /**
+     * Set up theme defaults and registers support for various WordPress features.
+     *
+     * Note that this function is hooked into the after_setup_theme hook, which
+     * runs before the init hook. The init hook is too late for some features, such
+     * as indicating support post thumbnails.
+     */
+    function bb_setup() {
+
+        // This template supports featured images.
+        //add_theme_support('post-thumbnails');
+        // Gutenberg full document width.
+        add_theme_support('align-wide');
+        // https://thrivewp.com/responsive-youtube-embed-wordpress-gutenberg-editor/
+        // https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#responsive-embedded-content
+        add_theme_support('responsive-embeds');
+
+        //set_post_thumbnail_size(672, 372, true);
+
+        /*
+         * Switch default core markup for search form, comment form, and comments
+         * to output valid HTML5.
+         */
+        add_theme_support('html5', array(
+            'search-form', 'comment-form', 'comment-list',
+        ));
+
+        /*
+         * Enable support for Post Formats.
+         * See http://codex.wordpress.org/Post_Formats
+         */
+        add_theme_support('post-formats', array(
+            'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery',
+        ));
+
+        // This theme styles the visual editor to resemble the theme style.
+        add_editor_style('css/editor-style.css');
+
+    }
+endif;
+add_action('after_setup_theme', 'bb_setup');
+
+/**
+ * Enqueue Gutenberg block editor style.
+ * https://phantomthemes.com/easily-add-styles-to-gutenberg-block-editor/
+ */
+function bb_gutenberg_editor_styles() {
+    // wp_enqueue_style('scharphofcampers-block-editor-styles', get_theme_file_uri('/style-editor.css'), false, '1.0', 'all');
+}
+
+add_action('enqueue_block_editor_assets', 'bb_gutenberg_editor_styles');
 

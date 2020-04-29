@@ -24,6 +24,7 @@
 @import "app/pages/place";
 @import "app/pages/fractie";
 @import "app/pages/bestuur";
+@import "app/pages/default";
 
 
 @import "app/pages/about";
@@ -31,3 +32,5 @@
 @import "app/pages/404";
 @import "app/pages/news-overvieuw";
 
+// Gutenberg WP Block editor.
+@import "app/gutenberg";
