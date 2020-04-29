@@ -561,7 +561,8 @@
   max-width: 100%;
   margin-bottom: 1em;
   margin-left: 0;
-  margin-right: 0
+  margin-right: 0;
+  clear: both;
 }
 
 .wp-block-image img {
@@ -589,12 +590,12 @@
 
 .wp-block-image .alignleft {
   float: left;
-  margin-right: 1em
+  margin-right: 2em
 }
 
 .wp-block-image .alignright {
   float: right;
-  margin-left: 1em
+  margin-left: 2em
 }
 
 .wp-block-image .aligncenter {
@@ -1136,6 +1137,13 @@ pre.wp-block-verse {
 }
 
 /* Custom additions 2020. */
+
+// Cover image title in front of the color overlay.
 .wp-block-cover__inner-container {
-  z-index:1;
+  z-index: 1;
+}
+
+// Image and paragraph beneath H2 title some extra margin.
+h2 + .wp-block-image, h2 + p {
+  margin-top: 50px;
 }

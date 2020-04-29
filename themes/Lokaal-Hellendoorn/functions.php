@@ -230,7 +230,7 @@ add_action('after_setup_theme', 'bb_setup');
  * https://phantomthemes.com/easily-add-styles-to-gutenberg-block-editor/
  */
 function bb_gutenberg_editor_styles() {
-    // wp_enqueue_style('scharphofcampers-block-editor-styles', get_theme_file_uri('/style-editor.css'), false, '1.0', 'all');
+    wp_enqueue_style('bb-block-editor-styles', get_theme_file_uri('/style-editor.css'), false, '1.0', 'all');
 }
 
 add_action('enqueue_block_editor_assets', 'bb_gutenberg_editor_styles');

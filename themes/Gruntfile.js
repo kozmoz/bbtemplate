@@ -20,6 +20,7 @@ module.exports = function(grunt) {
                 'Lokaal-Hellendoorn/sass/*.scss',
                 'Lokaal-Hellendoorn/sass/app/partials/*.scss',
                 'Lokaal-Hellendoorn/sass/app/pages/*.scss',
+                'Lokaal-Hellendoorn/sass/app/*.scss',
                 'Lokaal-Hellendoorn/sass/vendor/bootstrap/_variables.scss'],
             tasks: ['sass:dist', 'uglify:main']
         },

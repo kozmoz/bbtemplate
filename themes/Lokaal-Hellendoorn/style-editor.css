@@ -1,0 +1,30 @@
+/* Similar styling in the Wordpress Gutenberg block editor. */
+
+p, h2, h3 {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 18px;
+    color: #565656;
+}
+
+.wp-block-heading h2 {
+    font-size: 43px;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Little bit wider than default block editor. */
+.wp-block {
+    max-width: 800px !important;
+}
+
+.wp-block[data-align=full] {
+    max-width: none !important;
+}

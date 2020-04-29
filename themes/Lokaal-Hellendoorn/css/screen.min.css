@@ -9518,6 +9518,7 @@ form .succes-message {
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
+  clear: both;
 }
 
 .wp-block-image img {
@@ -9545,12 +9546,12 @@ form .succes-message {
 
 .wp-block-image .alignleft {
   float: left;
-  margin-right: 1em;
+  margin-right: 2em;
 }
 
 .wp-block-image .alignright {
   float: right;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 .wp-block-image .aligncenter {
@@ -10090,6 +10091,10 @@ pre.wp-block-verse {
 /* Custom additions 2020. */
 .wp-block-cover__inner-container {
   z-index: 1;
+}
+
+h2 + .wp-block-image, h2 + p {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=screen.min.css.map */
