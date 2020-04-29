@@ -1,3 +1,11 @@
+Changelog
+=========
+
+2020-04-29 - Version 1.5.0
+==========================
+* Created new page template compatible with WP Gutenberg block editor 
+
+
 2019-10-10 - Version 1.4.5
 ==========================
 * Fix "Laad Meer" news button 
