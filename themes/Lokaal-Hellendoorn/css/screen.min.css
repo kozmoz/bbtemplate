@@ -7853,7 +7853,7 @@ p {
   background-image: url("../images/searchResults.jpg");
 }
 
-img {
+.logo-header img {
   width: 100%;
   height: auto;
 }

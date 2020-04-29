@@ -2,6 +2,14 @@
 ?>
 <?php get_header(); ?>
 
+    <!-- Dirty fix for weird styling. -->
+    <style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+    </style>
+
 <div class="hero-image home" style="background-image:url('<?php the_field('nieuws_afbeelding') ?>')">
     <div class="content">
         <h1> <?php the_title();?></h1>

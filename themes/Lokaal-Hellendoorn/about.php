@@ -5,6 +5,14 @@ Template Name: Over ons pagina
 ?>
 <?php get_header(); ?>
 
+    <!-- Dirty fix for weird styling. -->
+    <style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+    </style>
+
     <div class="hero-image" style="background-image:url('<?php the_field('header_afbeelding') ?>')">
         <div class="content">
             <h1> <?php the_title();?></h1>
