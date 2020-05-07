@@ -9138,7 +9138,7 @@ form .succes-message {
   background-color: #000;
   background-size: cover;
   background-position: 50%;
-  min-height: 430px;
+  min-height: 400px;
   width: 100%;
   margin: 0 0 1.5em;
   display: flex;
@@ -10107,6 +10107,15 @@ section h2 {
 
   .wp-block-image img {
     height: unset;
+  }
+
+  .wp-block-cover, .wp-block-cover-image {
+    min-height: 250px;
+  }
+
+  section h2 {
+    margin: 30px 0 30px 0;
+    padding-bottom: 0;
   }
 }
 
