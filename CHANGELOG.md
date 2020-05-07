@@ -5,6 +5,7 @@ Changelog
 --------------------------
 * Styling for "Media & Text" header (Raadsleden pagina)
 * Styling for table added
+* "Fractieleden" post type removed
 
 2020-05-07 - Version 1.5.3
 --------------------------
