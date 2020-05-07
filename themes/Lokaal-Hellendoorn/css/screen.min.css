@@ -9657,7 +9657,7 @@ form .succes-message {
 .wp-block-media-text {
   display: grid;
   grid-template-rows: auto;
-  align-items: center;
+  align-items: start;
   grid-template-areas: "media-text-media media-text-content";
   grid-template-columns: 50% auto;
 }
@@ -10023,7 +10023,8 @@ pre.wp-block-verse {
 }
 
 .has-large-font-size {
-  font-size: 36px;
+  font-size: 30px;
+  color: black;
 }
 
 .has-huge-font-size, .has-larger-font-size {
@@ -10116,6 +10117,11 @@ section h2 {
   section h2 {
     margin: 30px 0 30px 0;
     padding-bottom: 0;
+  }
+
+  .wp-block-media-text .wp-block-media-text__content {
+    margin: 20px 0 50px 0;
+    padding: 0;
   }
 }
 
