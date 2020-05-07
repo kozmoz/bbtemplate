@@ -1,4 +1,4 @@
-<?php get_header()?>
+<?php get_header() ?>
 
 <div class="hero-image notfound">
     <div class="content">
@@ -11,13 +11,13 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="button-container notfound">
-                <a class="btn" onclick="history.back(-1)">Ga terug</a>
+                <a class="btn" onclick="history.back()">Ga terug</a>
                 <a class="btn" href="/home">Home</a>
                 <a class="btn" href="/contact">Contact</a>
             </div>
         </div>
     </div>
 </div>
-<?php get_footer()?>
+<?php get_footer() ?>
 
 

@@ -30,13 +30,19 @@ define('WP_DEBUG', true);
                             // $format = get_post_format();
                             // get_template_part('content', empty($format) ? 'page' : $format);
 
+                            ob_start();
                             the_content();
+                            $contents = ob_get_clean();
+
+                            // Add the page title as h2 title if contents has no title.
+                            if (strpos($contents, '<h2>') === false) {
+                                the_title('<h2>', '</h2><!-- .entry-header -->');
+                            }
+                            echo $contents;
 
                         endwhile;
 
                     else :
-
-                        the_post();
 
                         // If no content, include the "No posts found" template.
                         get_template_part('content', 'none');
