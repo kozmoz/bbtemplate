@@ -12,7 +12,7 @@ define('WP_DEBUG', true);
     <section>
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-xs-12">
 
                     <?php
 

@@ -1138,7 +1138,7 @@ pre.wp-block-verse {
 
 /* Custom additions 2020. */
 
-// Cover image title in front of the color overlay.
+// Put cover image title in front of the color overlay.
 .wp-block-cover__inner-container {
   z-index: 1;
 }
@@ -1146,4 +1146,18 @@ pre.wp-block-verse {
 // Image and paragraph beneath H2 title some extra margin.
 h2 + .wp-block-image, h2 + p {
   margin-top: 50px;
+}
+
+// Full width images on mobile.
+@media (max-width: 600px) {
+  .wp-block-image .alignleft, .wp-block-image .alignright {
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  // Keep aspect ratio.
+  .wp-block-image img {
+    height: unset;
+  }
 }

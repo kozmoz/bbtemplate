@@ -18,12 +18,12 @@ To start the development environment Wordpress backend
 (Docker needs to be installed and running):
 
     $ docker-compose up
-    $ open in browser: http://localhost:8005/
+    $ open http://localhost:8005/
 
 Start watching for JavaScript and CSS changes:
 
     $ cd themes
-    $ npm install
+    $ npm install  || (only once)
     $ npm run serve 
 
 
