@@ -7,6 +7,7 @@ Changelog
 * Styling for table added
 * "Fractieleden" post type removed
 * Publish date added to news post
+* Instagram icon added to footer
 
 2020-05-07 - Version 1.5.3
 --------------------------

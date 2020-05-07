@@ -81,7 +81,7 @@
                       <div class="col-xs-12 col-sm-4">
                         <ul class="social-icons">
                             <li><a href="https://www.facebook.com/Lokaal-Hellendoorn-929777030508070/" target="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/facebook-icon.png" alt="Facebook" title="Lokaal Hellendoorn op Facebook"></a></li>
-                            <?php /* <a href="/home"><li><img src="<?php bloginfo('template_directory'); ?>/images/twitter-icon.png" alt="twitter-icon"></li></a> */ ?>
+                            <li><a href="https://www.instagram.com/lokaal_hellendoorn/" target="_blank" rel="noopener noreferrer"><img src="<?php bloginfo('template_directory'); ?>/images/instagram-icon.png" alt="Instagram" title="Lokaal Hellendoorn op Instagram" width="32" height="32" style="width:32px"></a></li>
                         </ul>
                     </div>
                 </div>
