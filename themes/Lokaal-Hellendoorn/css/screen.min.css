@@ -10124,6 +10124,14 @@ section h2 {
   text-align: start;
 }
 
+.has-text-align-center {
+  text-align: center;
+}
+
+.has-text-align-right {
+  text-align: right;
+}
+
 @media (max-width: 600px) {
   .wp-block-image .alignleft, .wp-block-image .alignright {
     float: none;

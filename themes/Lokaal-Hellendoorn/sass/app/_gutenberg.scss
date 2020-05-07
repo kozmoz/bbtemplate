@@ -1178,6 +1178,14 @@ section h2 {
   text-align: start;
 }
 
+.has-text-align-center {
+  text-align: center;
+}
+
+.has-text-align-right {
+  text-align: right;
+}
+
 // Mobile pages.
 @media (max-width: 600px) {
 
