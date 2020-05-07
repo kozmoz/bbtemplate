@@ -1,4 +1,3 @@
-
 /* Because the header is static, there need to be some spacing to have the content start below the header.  */
 .header-spacer {
   height: 70px;
@@ -110,15 +109,18 @@ header {
         height: 70px;
         display: inline-block;
         line-height: 50px;
-        padding: 0 20px;
+        padding: 0 15px;
         background-color: #fff;
         text-decoration: none;
-        text-transform: capitalize;
         cursor: pointer;
         @include transition(300ms);
 
         &:hover {
           background-color: #F8E71C;
+        }
+
+        :first-letter {
+          text-transform: capitalize;
         }
 
         @media(max-width: 440px) {

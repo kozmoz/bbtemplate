@@ -8039,10 +8039,9 @@ header nav.main-nav ul a {
   height: 70px;
   display: inline-block;
   line-height: 50px;
-  padding: 0 20px;
+  padding: 0 15px;
   background-color: #fff;
   text-decoration: none;
-  text-transform: capitalize;
   cursor: pointer;
   -moz-transition: 300ms;
   -o-transition: 300ms;
@@ -8051,6 +8050,9 @@ header nav.main-nav ul a {
 }
 header nav.main-nav ul a:hover {
   background-color: #F8E71C;
+}
+header nav.main-nav ul a :first-letter {
+  text-transform: capitalize;
 }
 @media (max-width: 440px) {
   header nav.main-nav ul a {

@@ -49,7 +49,7 @@
                         <a href="/over-ons"><li>over</li></a>
                         <a href="/nieuws-pagina"><li>nieuws</li></a>
                         <a href="/fractie"><li>fractie</li></a>
-                        <a href="/bestuur"><li>bestuur</li></a>
+                        <a href="/lid-worden"><li>Lid&nbsp;worden</li></a>
                         <a href="/contact"><li>contact</li></a>
                     </ul>
                 </nav>
