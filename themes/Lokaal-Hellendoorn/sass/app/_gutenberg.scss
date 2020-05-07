@@ -1145,10 +1145,23 @@ pre.wp-block-verse {
 }
 
 // Image and paragraph beneath H2 title some extra margin.
-section h2  {
+section h2 {
   display: block;
   margin: 30px 0 50px 0;
   padding-bottom: 30px;
+}
+
+// Within cover image, big yellow title.
+.wp-block-cover h2 {
+  font-size: 50px;
+  color: #F8D406;
+  margin: 0;
+  padding: 0;
+}
+
+// Image within cover image the original width.
+.wp-block-cover__inner-container img {
+  width: auto !important;
 }
 
 // Mobile pages.
@@ -1171,7 +1184,7 @@ section h2  {
     min-height: 250px;
   }
 
-  section h2  {
+  section h2 {
     margin: 30px 0 30px 0;
     padding-bottom: 0;
   }

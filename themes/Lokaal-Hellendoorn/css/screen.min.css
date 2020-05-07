@@ -10099,6 +10099,17 @@ section h2 {
   padding-bottom: 30px;
 }
 
+.wp-block-cover h2 {
+  font-size: 50px;
+  color: #F8D406;
+  margin: 0;
+  padding: 0;
+}
+
+.wp-block-cover__inner-container img {
+  width: auto !important;
+}
+
 @media (max-width: 600px) {
   .wp-block-image .alignleft, .wp-block-image .alignright {
     float: none;
