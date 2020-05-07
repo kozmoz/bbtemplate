@@ -63,7 +63,6 @@ h5 {
 	height: 400px;
 	position: relative;
 	margin-bottom: 50px;
-	margin-top: 70px;
 	@include background-image();
 	@media (max-width: 440px) {
 		margin-top: 0;
