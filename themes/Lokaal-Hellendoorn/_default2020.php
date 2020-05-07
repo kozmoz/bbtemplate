@@ -56,6 +56,91 @@ define('WP_DEBUG', true);
 
         <p>&nbsp;</p>
 
+        <?php
+
+        /**
+         * Show the carousel on the front page.
+         */
+
+        ?>
+        <?php if (is_front_page()) : ?>
+
+            <div class="carousel-title">
+                <h3>Plaatsen in de gemeente Hellendoorn</h3>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+
+                <a href="/daarle">
+                    <div class="item daarle">
+                        <div class="place-name ">
+                            <h4>Daarle</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/daarlerveen">
+                    <div class="item daarlerveen">
+                        <div class="place-name ">
+                            <h4>Daarlerveen</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/haarle">
+                    <div class="item haarle">
+                        <div class="place-name ">
+                            <h4>Haarle</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/hellendoorn">
+                    <div class="item hellendoorn">
+                        <div class="place-name ">
+                            <h4>Hellendoorn</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/hulsen">
+                    <div class="item hulsen">
+                        <div class="place-name ">
+                            <h4>Hulsen</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/marle">
+                    <div class="item marle">
+                        <div class="place-name ">
+                            <h4>Marle</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/nijverdal">
+                    <div class="item nijverdal">
+                        <div class="place-name ">
+                            <h4>Nijverdal</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="/egede">
+                    <div class="item egede">
+                        <div class="place-name ">
+                            <h4>Egede,<br>
+                                Hancate,<br>
+                                Eelen <br>
+                                en Rhaan
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        <?php endif; ?>
+
     </section>
 
 

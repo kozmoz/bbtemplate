@@ -17,7 +17,7 @@ Template Name: Homepagina
         <div class="row">
             <div class="col-xs-12">
                 <div class="content-container">
-                    <?php the_field(page_text)?>
+                    <?php the_field('page_text')?>
                 </div>
             </div>
             <div class="col-xs-12">

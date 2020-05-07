@@ -1,4 +1,3 @@
-<?php get_header(); ?>
-Standaard pagina
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php
+
+include('_default2020.php');
