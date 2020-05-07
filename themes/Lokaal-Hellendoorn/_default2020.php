@@ -145,6 +145,65 @@ define('WP_DEBUG', true);
             </div>
         <?php endif; ?>
 
+
+        <?php
+        /**
+         * Contact form.
+         */
+
+        ob_start();
+        the_title();
+        $title = ob_get_clean();
+
+        ?>
+        <?php if (strtolower($title) === "lid worden" || strtolower($title) === "contact") : ?>
+
+            <div class="container">
+                <form id="contactForm" action="<?php bloginfo('template_directory'); ?>/contacthandler.php">
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+
+                            <input id="field1" name="field1" class="form-control" type="text">
+                            <label for="field1" class="col-xs-12 col-sm-6 col-form-label">Naam</label>
+
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <input is="email" name="email" class="form-control" type="text">
+                            <label for="email" class="col-xs-12 col-form-label">E-mail</label>
+
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <input name="phonenumber" class="form-control" type="text">
+                            <label for="example-text-input" class="col-xs-12 col-form-label">Telefoonnummer
+                                (optioneel)</label>
+
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <textarea id="message" name="message" class="form-control" type="text"></textarea>
+                            <label for="message" class="col-xs-12 col-form-label">Bericht</label>
+                        </div>
+                    </div>
+                    <div class="form-group row" style="display:none">
+                        <div class="col-xs-12">
+                            <input id="name" name="name" class="form-control" type="text">
+                            <label for="name" class="col-xs-12 col-form-label">Name</label>
+
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" class="btn">Verstuur</button>
+                    </div>
+                </form>
+            </div>
+
+        <?php endif; ?>
+
     </section>
 
 

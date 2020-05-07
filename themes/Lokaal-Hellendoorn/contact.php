@@ -18,6 +18,7 @@ Template Name: Contact pagina
         </div>
     </div>
 </div>
+
 <div class="container">
     <form id="contactForm" action="<?php bloginfo('template_directory'); ?>/contacthandler.php">
         <div class="form-group row">
