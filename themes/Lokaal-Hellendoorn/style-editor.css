@@ -28,3 +28,11 @@ p {
 .wp-block[data-align=full] {
     max-width: none !important;
 }
+
+/* Within cover image, big yellow title. */
+.wp-block-cover h2 {
+    font-size: 50px !important;
+    color: #F8D406 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
