@@ -10132,6 +10132,15 @@ section h2 {
   text-align: right;
 }
 
+.post-publish-date {
+  font-style: italic;
+  text-align: center;
+}
+
+.post-publish-date-single {
+  font-style: italic;
+}
+
 @media (max-width: 600px) {
   .wp-block-image .alignleft, .wp-block-image .alignright {
     float: none;

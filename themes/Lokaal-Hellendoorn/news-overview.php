@@ -23,15 +23,15 @@ Template Name: News pagina
                     <input type="hidden" name="post_type" value="nieuws"/> <!-- // hidden 'products' value -->
                 </form>
                 <script>
-                    function validateSearch() {
-                        var input = $(".tekst").val();
-                        if (input.length < 2) {
-                            $(".btn.search-go").prop('disabled', true);
-                        } else {
-                            $(".btn.search-go").prop('disabled', false);
-                        }
-                        return false;
+                function validateSearch() {
+                    var input = $('.tekst').val();
+                    if (input.length < 2) {
+                        $('.btn.search-go').prop('disabled', true);
+                    } else {
+                        $('.btn.search-go').prop('disabled', false);
                     }
+                    return false;
+                }
                 </script>
             </div>
         </div>
@@ -49,6 +49,7 @@ Template Name: News pagina
                 <div class="col-xs-12 col-sm-8">
                     <div class="news-item-previeuw">
                         <h3><?php the_title(); ?></h3>
+                        <p class="post-publish-date">Gepubliceerd op <?php the_time( 'j F, Y' ); ?>.</p>
                         <p><?php the_field('nieuws_tekst'); ?></p>
                         <a class="btn" href="<?php the_permalink(); ?>">lees verder</a>
                     </div>
