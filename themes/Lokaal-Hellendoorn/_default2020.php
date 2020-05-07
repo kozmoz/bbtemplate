@@ -38,6 +38,10 @@ define('WP_DEBUG', true);
                             if (strpos($contents, '<h2>') === false) {
                                 the_title('<h2>', '</h2><!-- .entry-header -->');
                             }
+
+                            // Add "table"-class to table element.
+                            $contents = str_replace('<table>', '<table class="table">', $contents);
+
                             echo $contents;
 
                         endwhile;

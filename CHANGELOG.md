@@ -4,7 +4,7 @@ Changelog
 2020-05-07 - Version 1.5.4
 --------------------------
 * Styling for "Media & Text" header (Raadsleden pagina)
-
+* Styling for table added
 
 2020-05-07 - Version 1.5.3
 --------------------------
