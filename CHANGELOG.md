@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2020-05-07 - Version 1.5.4
+--------------------------
+* Styling for "Media & Text" header (Raadsleden pagina)
+
+
 2020-05-07 - Version 1.5.3
 --------------------------
 * Make new template suitable for homepage (added carousel)

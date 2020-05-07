@@ -10110,6 +10110,18 @@ section h2 {
   width: auto !important;
 }
 
+.wp-block-media-text figure {
+  max-width: 500px;
+}
+
+.wp-block-media-text {
+  margin-bottom: 50px;
+}
+
+.wp-block-media-text__content h3 {
+  text-align: start;
+}
+
 @media (max-width: 600px) {
   .wp-block-image .alignleft, .wp-block-image .alignright {
     float: none;
@@ -10131,7 +10143,7 @@ section h2 {
   }
 
   .wp-block-media-text .wp-block-media-text__content {
-    margin: 20px 0 50px 0;
+    margin: 0 0 50px 0;
     padding: 0;
   }
 }
