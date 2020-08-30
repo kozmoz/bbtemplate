@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2020-08-31 - Version 1.5.5
+--------------------------
+* Added form for "windturbines" page
+
 2020-05-07 - Version 1.5.4
 --------------------------
 * Styling for "Media & Text" header (Raadsleden pagina)

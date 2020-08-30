@@ -18,6 +18,9 @@ $('#contactForm').validate({
         message: {
             required: true,
             minlength: 2
+        },
+        hoax: {
+            required: true
         }
     },
     messages: {
@@ -37,6 +40,9 @@ $('#contactForm').validate({
         message: {
             required: 'Stuur een bericht',
             minlength: 'Vul een vraag in met minimaal 2 letters'
+        },
+        hoax: {
+            required: 'Het is verplicht om deze vraag te bevestigen',
         }
 
     },

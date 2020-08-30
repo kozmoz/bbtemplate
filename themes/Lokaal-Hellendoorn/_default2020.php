@@ -156,10 +156,20 @@ define('WP_DEBUG', true);
         $title = ob_get_clean();
 
         ?>
-        <?php if (strtolower($title) === "lid worden" || strtolower($title) === "contact") : ?>
+        <?php if (strtolower($title) === "lid worden" || strtolower($title) === "contact"
+            || strtolower($title) === "windturbines") : ?>
+
+        <style>
+            #hoax-error {
+                margin-top: -1.5em;
+            }
+        </style>
 
             <div class="container">
                 <form id="contactForm" action="<?php bloginfo('template_directory'); ?>/contacthandler.php">
+
+                    <input type="hidden" name="title" value="<?php echo htmlspecialchars($title) ?>" />
+
                     <div class="form-group row">
                         <div class="col-xs-12">
 
@@ -168,27 +178,39 @@ define('WP_DEBUG', true);
 
                         </div>
                     </div>
+                    <?php if (strtolower($title) === "windturbines") { ?>
+                        <div class="form-group row">
+                            <div class="col-xs-12">
+                                <input id="address" name="address" class="form-control" type="text">
+                                <label for="address" class="col-xs-12 col-form-label">Adres</label>
+
+                            </div>
+                        </div>
+                    <?php } ?>
                     <div class="form-group row">
                         <div class="col-xs-12">
-                            <input is="email" name="email" class="form-control" type="text">
+                            <input id="email" name="email" class="form-control" type="text">
                             <label for="email" class="col-xs-12 col-form-label">E-mail</label>
-
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-xs-12">
-                            <input name="phonenumber" class="form-control" type="text">
-                            <label for="example-text-input" class="col-xs-12 col-form-label">Telefoonnummer
+                            <input id="phonenumber" name="phonenumber" class="form-control" type="text">
+                            <label for="phonenumber" class="col-xs-12 col-form-label">Telefoonnummer
                                 (optioneel)</label>
 
                         </div>
                     </div>
+
+                    <?php if (strtolower($title) !== "windturbines") { ?>
                     <div class="form-group row">
                         <div class="col-xs-12">
                             <textarea id="message" name="message" class="form-control" type="text"></textarea>
                             <label for="message" class="col-xs-12 col-form-label">Bericht</label>
                         </div>
                     </div>
+                    <?php } ?>
+
                     <div class="form-group row" style="display:none">
                         <div class="col-xs-12">
                             <input id="name" name="name" class="form-control" type="text">
@@ -196,7 +218,34 @@ define('WP_DEBUG', true);
 
                         </div>
                     </div>
-                    <div class="button-container">
+
+                    <?php if (strtolower($title) === "windturbines") { ?>
+                        <div class="form-group row">
+                            <div class="col-xs-12">
+                                <div class="checkbox">
+                                    <label style="position: static">
+                                        <input type="checkbox" id="newsletter" name="newsletter" value="true"/>
+                                        Ja, ik ontvang graag twee keer per jaar de Lokaal Hellendoorn nieuwsbrief
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-12">
+                                <div class="checkbox">
+                                    <label style="position: static" style="margin-bottom: -100px">
+                                        <input id="hoax" name="hoax" value="haha" type="checkbox" />
+                                        Hierbij verklaar ik dat ik op dit moment geen coronaklachten heb
+                                        (hoesten, verkoudheidsklachten, verhoging of koorts, benauwdheid,
+                                        rek- en/of smaakverlies) en dat ik niet naar de thema-avond kom mocht
+                                        ik deze klachten alsnog krijgen.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+
+                    <div class="button-container" style="<?php echo (strtolower($title) === "windturbines") ? "padding-top: 0" : "" ?>">
                         <button type="submit" class="btn">Verstuur</button>
                     </div>
                 </form>

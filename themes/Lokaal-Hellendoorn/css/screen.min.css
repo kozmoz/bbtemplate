@@ -8598,6 +8598,10 @@ form .form-group input:focus {
 form .form-group input:focus + label {
   color: #0E7FC3;
 }
+form .form-group input[type=checkbox] {
+  margin-top: 5px;
+  height: auto;
+}
 form .form-group textarea {
   margin-top: 30px;
   border: 1px solid #000000;

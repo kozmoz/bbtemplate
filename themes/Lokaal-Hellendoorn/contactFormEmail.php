@@ -16,25 +16,38 @@
                 <tr>
                     <td>
                         <br><br>
-                        <p>Iemand heeft het contact formulier ingevuld:</p>
+                        <p>Iemand heeft het contact formulier ingevuld op de pagina
+                            <?php echo htmlspecialchars($title) ?>:</p>
                         <br><br>
                         <table border="0" cellpadding="7" cellspacing="2" width="100%">
                             <tr>
                                 <td width="300">Naam</td>
-                                <td><?php echo $name ?></td>
+                                <td><?php echo htmlspecialchars($name) ?></td>
                             </tr>
+                            <?php if (!empty($address)) { ?>
+                            <tr>
+                                <td width="300">Adres</td>
+                                <td><?php echo htmlspecialchars($address) ?></td>
+                            </tr>
+                            <?php } ?>
                             <tr>
                                 <td width="300">E-mailadres</td>
-                                <td><?php echo $email ?></td>
+                                <td><?php echo htmlspecialchars($email) ?></td>
                             </tr>
                             <tr>
                                 <td width="300">Telefoonnummer</td>
-                                <td><?php echo $phonenumber ?></td>
+                                <td><?php echo htmlspecialchars($phonenumber) ?></td>
                             </tr>
                             <tr>
-                                <td width="300">Bericht</td>
-                                <td><?php echo $message ?></td>
+                                <td width="300">Nieuwsbrief</td>
+                                <td><?php echo !empty($newsletter) ? "Ja" : "Nee" ?></td>
                             </tr>
+                            <?php if (!empty($message)) { ?>
+                            <tr>
+                                <td width="300">Bericht</td>
+                                <td><?php echo htmlspecialchars($message) ?></td>
+                            </tr>
+                            <?php } ?>
                         </table>
                         <br>
                     </td>
