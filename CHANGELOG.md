@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2020-08-31 - Version 1.5.6
+--------------------------
+* Added "Egede, Hancate, Eelen en Rhaan" to bottom sitemap
+
 2020-08-31 - Version 1.5.5
 --------------------------
 * Added form for "windturbines" page
