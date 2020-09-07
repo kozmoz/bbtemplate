@@ -35,6 +35,10 @@ form {
         color: #0E7FC3;
       }
     }
+    input[type=checkbox] {
+      margin-top: 5px;
+      height: auto;
+    }
     textarea {
       margin-top: 30px;
       border: 1px solid #000000;

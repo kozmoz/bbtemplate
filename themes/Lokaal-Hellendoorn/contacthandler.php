@@ -17,13 +17,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //$mail->Password   = '';
     $mail->setFrom('info@lokaalhellendoorn.nl', 'Lokaal Hellendoorn website');
     $mail->addAddress('info@lokaalhellendoorn.nl', 'Lokaal Hellendoorn');
+//    $mail->addAddress('rob@juurlink.org', 'Lokaal Hellendoorn');
     $mail->isHTML(true);                                  // Set email format to HTML
 
     // Get the form fields and remove whitespace.
+    $title = trim($_POST["title"]);
     $name = trim($_POST["field1"]);
+    $address = trim($_POST["address"]);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $phoneNumber = trim($_POST["phonenumber"]);
+    $phonenumber = trim($_POST["phonenumber"]);
     $message = trim($_POST["message"]);
+    $newsletter = trim($_POST["newsletter"]);
 
     // Used for spam detection.
     // If this hidden field is filled, reject the message.
@@ -36,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'contactFormEmail.php';
     $email_content = ob_get_clean();
 
-    $mail->Subject = 'Lokaal Hellendoorn - Bericht via het contactformulier';
+    $mail->Subject = 'Lokaal Hellendoorn - Bericht via ' . $title;
     $mail->Body = $email_content;
 
     try {

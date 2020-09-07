@@ -70,6 +70,7 @@
                                   <p>Plaatsen</p>
                                   <a href="/daarle"><li>Daarle</li></a>
                                   <a href="/daarlerveen"><li>Daarlerveen</li></a>
+                                  <a href="/egede"><li>Egede, Hancate, Eelen en Rhaan</li></a>
                                   <a href="/haarle"><li>Haarle</li></a>
                                   <a href="/hellendoorn"><li>Hellendoorn</li></a>
                                   <a href="/hulsen"><li>Hulsen</li></a>
