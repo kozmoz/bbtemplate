@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2020-09-07 - Version 1.5.7
+--------------------------
+* Changed text: "Bedankt voor uw bericht, we hebben deze in goede orde ontvangen. Wij zullen zo spoedig mogelijk contact met u opnemen"
+
 2020-08-31 - Version 1.5.6
 --------------------------
 * Added "Egede, Hancate, Eelen en Rhaan" to bottom sitemap

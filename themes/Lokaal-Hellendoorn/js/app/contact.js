@@ -58,7 +58,7 @@ $('#contactForm').validate({
             }
         }).done(function(result) {
             if(result.result == 'ok') {
-                $(form).html('<div class="succes-message"><h2>Gelukt!</h2><p>Bedankt voor je bericht, we hebben deze in goede orde ontvangen. We zullen zo spoedig mogelijk contact met je opnemen.</p></div>');
+                $(form).html('<div class="succes-message"><h2>Gelukt!</h2><p>Bedankt voor uw bericht, we hebben deze in goede orde ontvangen. Wij zullen zo spoedig mogelijk contact met u opnemen.</p></div>');
             } else {
                 alert('Unfortunately, something went wrong because of a technical error.');
             }
