@@ -8928,11 +8928,6 @@ form .succes-message {
 .news-highlight .news-item-previeuw {
   margin-bottom: 50px;
 }
-.news-highlight .news-item-previeuw p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 .news-highlight .news-item-image {
   height: 335px;
   width: 100%;
