@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2021-04-15 - Version 1.5.8
+--------------------------
+* Bugfix: Removed "nowrap" from preview news item 
+
 2020-09-07 - Version 1.5.7
 --------------------------
 * Changed text: "Bedankt voor uw bericht, we hebben deze in goede orde ontvangen. Wij zullen zo spoedig mogelijk contact met u opnemen"
