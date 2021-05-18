@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2021-04-15 - Version 1.5.9
+2021-05-18 - Version 1.5.9
 --------------------------
 * Improvement: Use blog tagline as phone number in theme footer 
 
