@@ -2,7 +2,7 @@
   "name": "lokaal-hellendoorn",
   "description": "Lokaal Hellendoorn Wordpress Theme",
   "private": true,
-  "version": "1.5.8",
+  "version": "1.5.9",
   "devDependencies": {
     "diff": "^3.5.0",
     "grunt": "^1.0.4",

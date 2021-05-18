@@ -46,8 +46,18 @@
                     <div class="col-xs-12 col-sm-4">
                         <div class="table">
                             <div class="table-row">
+                                <?php
+                                /**
+                                 * Use the Blog's "tagline" as phone number.
+                                 */
+
+                                /** @noinspection PhpUndefinedFunctionInspection */
+                                $phoneLabel = get_bloginfo( 'description' );
+                                $phoneLink = empty($phoneLabel) ? '' : preg_replace('/[^0-9]+/i', '', $phoneLabel);
+                                $phoneLink = preg_replace('/^0/', '+31', $phoneLink);
+                                ?>
                                 <div class="table-cel"><p>Tel :</p></div>
-                                <div class="table-cel"><a href="tel:‭+31548655786‬">‭(0548) 65 57 86‬</a></div>
+                                <div class="table-cel"><a href="tel:<?php echo $phoneLink; ?>"><?php echo $phoneLabel; ?></a></div>
                             </div>
                             <div class="table-row">
                                 <div class="table-cel"><p>E-mail :</p></div>
