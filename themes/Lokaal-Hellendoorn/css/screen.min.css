@@ -10052,7 +10052,7 @@ pre.wp-block-verse {
   max-width: none;
 }
 
-.wp-block-cover.alignfull img {
+.wp-block-cover.alignfull > img {
   position: absolute;
 }
 
