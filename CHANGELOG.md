@@ -1,9 +1,11 @@
 Changelog
 =========
 
-2021-05-27 - Version 1.5.10
+2021-05-27 - Version 1.5.11
 ---------------------------
+* Bugfix: Cover image styling  
 * Bugfix: Gutenberg incompatibilities. Images should keep aspect ratio. Header image should crop 
+* Improvement: Update Wordpress Docker image to 5.7.2.
 
 2021-05-18 - Version 1.5.9
 --------------------------

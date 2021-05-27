@@ -1089,8 +1089,12 @@ pre.wp-block-verse {
   margin-left: -50vw;
 }
 
-.alignfull img {
+// Background of top cover (Lokaal Hellendoorn Fractie) full width.
+.wp-block-cover > .alignfull img {
   position: absolute;
+}
+
+.alignfull img {
   width: 100vw !important;
   height: auto;
   max-width: none;

@@ -9682,6 +9682,7 @@ form .succes-message {
 .wp-block-media-text > figure > img, .wp-block-media-text > figure > video {
   max-width: unset;
   width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 
@@ -10040,7 +10041,17 @@ pre.wp-block-verse {
   margin-left: -50vw;
 }
 
-.alignfull img, .wp-block-cover {
+.wp-block-cover > .alignfull img {
+  position: absolute;
+}
+
+.alignfull img {
+  width: 100vw !important;
+  height: auto;
+  max-width: none;
+}
+
+.wp-block-cover {
   width: 100vw !important;
   max-width: none;
 }
@@ -10092,6 +10103,7 @@ pre.wp-block-verse {
 /* Custom additions 2020. */
 .wp-block-cover__inner-container {
   z-index: 1;
+  position: absolute;
 }
 
 section h2 {
