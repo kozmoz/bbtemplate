@@ -723,6 +723,8 @@
 .wp-block-media-text > figure > img, .wp-block-media-text > figure > video {
   max-width: unset;
   width: 100%;
+  // Fix 20210527: keep aspect ratio.
+  height: auto;
   vertical-align: middle
 }
 
@@ -1087,7 +1089,14 @@ pre.wp-block-verse {
   margin-left: -50vw;
 }
 
-.alignfull img, .wp-block-cover {
+.alignfull img {
+  position: absolute;
+  width: 100vw !important;
+  height: auto;
+  max-width: none;
+}
+
+.wp-block-cover {
   width: 100vw !important;
   max-width: none;
 }
@@ -1142,6 +1151,7 @@ pre.wp-block-verse {
 // Put cover image title in front of the color overlay.
 .wp-block-cover__inner-container {
   z-index: 1;
+  position: absolute;
 }
 
 // Image and paragraph beneath H2 title some extra margin.

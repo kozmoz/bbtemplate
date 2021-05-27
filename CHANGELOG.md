@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2021-05-27 - Version 1.5.10
+---------------------------
+* Bugfix: Gutenberg incompatibilities. Images should keep aspect ratio. Header image should crop 
+
 2021-05-18 - Version 1.5.9
 --------------------------
 * Improvement: Use blog tagline as phone number in theme footer 
