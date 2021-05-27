@@ -10041,10 +10041,6 @@ pre.wp-block-verse {
   margin-left: -50vw;
 }
 
-.wp-block-cover > .alignfull img {
-  position: absolute;
-}
-
 .alignfull img {
   width: 100vw !important;
   height: auto;
@@ -10054,6 +10050,10 @@ pre.wp-block-verse {
 .wp-block-cover {
   width: 100vw !important;
   max-width: none;
+}
+
+.wp-block-cover.alignfull img {
+  position: absolute;
 }
 
 @media (min-width: 600px) {
