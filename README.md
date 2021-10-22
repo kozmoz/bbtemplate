@@ -31,13 +31,13 @@ Start watching for JavaScript and CSS changes:
 
 Update the version number in package.json.
 
-Build the Wordpress template zip:
+Build the WordPress template zip:
 
     $ cd themes
     $ npm install
     $ npm run build
 
-New install: Upload the theme zip `lokaal-hellendoorn.zip` within Wordpress -> Themes -> Add
+New install: Upload the theme zip `lokaal-hellendoorn.zip` within WordPress -> Themes -> Add
 
 In case of theme update: 
  * Install plugin "Update Theme and Plugins from Zip File"
@@ -51,12 +51,15 @@ In case of theme update:
 The docker exec command allows you to run commands inside a Docker container.  
 The following command line will give you a bash shell inside your mariadb container:
 
-    $ docker exec -it some-mariadb bash
+    $ docker exec -it lh_mariadb bash
 
 The MariaDB Server log is also available through Docker's container log:
 
-    $ docker logs some-mariadb
+    $ docker logs lh_mariadb
 
+### Create new database
+
+    $ mysql> CREATE DATABASE  `wordpress` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 ### Database Dump
 

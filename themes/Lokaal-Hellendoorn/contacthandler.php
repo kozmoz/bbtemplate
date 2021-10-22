@@ -16,8 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //$mail->Username   = '';
     //$mail->Password   = '';
     $mail->setFrom('info@lokaalhellendoorn.nl', 'Lokaal Hellendoorn website');
-    $mail->addAddress('info@lokaalhellendoorn.nl', 'Lokaal Hellendoorn');
-//    $mail->addAddress('rob@juurlink.org', 'Lokaal Hellendoorn');
+    $mail->addAddress('contact@lokaalhellendoorn.nl', 'Lokaal Hellendoorn');
     $mail->isHTML(true);                                  // Set email format to HTML
 
     // Get the form fields and remove whitespace.

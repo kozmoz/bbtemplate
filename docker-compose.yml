@@ -30,5 +30,8 @@ services:
       - ./plugins/advanced-custom-fields:/var/www/html/wp-content/plugins/advanced-custom-fields
     environment:
       WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: 8yctovCrlAutl8
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DEBUG: false
     restart: always
