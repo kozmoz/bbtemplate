@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2021-10-22 - Version 1.5.13
+---------------------------
+* Improvement: Contactfrom send e-mail to contact@lokaalhellendoorn.nl
+
 2021-05-27 - Version 1.5.11
 ---------------------------
 * Bugfix: Cover image styling  
