@@ -69,7 +69,7 @@ Template Name: News pagina
                     <div class="news-item-previeuw">
                         <h3><?php the_title(); ?></h3>
                         <p class="post-publish-date">Gepubliceerd op <?php the_time('j F, Y'); ?>.</p>
-                        <p><?php the_field('nieuws_tekst'); ?></p>
+                        <p><?php the_field('nieuws_tekst'); the_excerpt(); ?></p>
                         <a class="btn" href="<?php the_permalink(); ?>">lees verder</a>
                     </div>
                 </div>

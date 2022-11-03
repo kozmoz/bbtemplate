@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2022-11-03 - Version 1.6.1
+---------------------------
+* Improvement: Show "excerpt" in news overview for first news item.
+
 2022-11-03 - Version 1.6.0
 ---------------------------
 * Improvement: New Gutenberg block-editor enabled for news items.
