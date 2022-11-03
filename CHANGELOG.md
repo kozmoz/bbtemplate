@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2022-11-03 - Version 1.6.0
+---------------------------
+* Improvement: New Gutenberg block-editor enabled for news items.
+
 2021-10-22 - Version 1.5.13
 ---------------------------
 * Improvement: Contactform send e-mail to contact@lokaalhellendoorn.nl

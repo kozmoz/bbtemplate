@@ -14,7 +14,7 @@ Installation process in summary:
 
 ### Start the environment
 
-To start the development environment Wordpress backend 
+To start the development environment WordPress backend 
 (Docker needs to be installed and running):
 
     $ docker-compose up
@@ -27,7 +27,7 @@ Start watching for JavaScript and CSS changes:
     $ npm run serve 
 
 
-## Build and Deploy Wordpress Theme
+## Build and Deploy WordPress Theme
 
 Update the version number in package.json.
 

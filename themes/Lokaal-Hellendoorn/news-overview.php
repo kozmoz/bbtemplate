@@ -1,4 +1,4 @@
-<?php
+<?php /** @noinspection DuplicatedCode */
 /*
 Template Name: News pagina
 */
@@ -23,15 +23,15 @@ Template Name: News pagina
                     <input type="hidden" name="post_type" value="nieuws"/> <!-- // hidden 'products' value -->
                 </form>
                 <script>
-                function validateSearch() {
-                    var input = $('.tekst').val();
-                    if (input.length < 2) {
-                        $('.btn.search-go').prop('disabled', true);
-                    } else {
-                        $('.btn.search-go').prop('disabled', false);
+                    function validateSearch() {
+                        var input = $('.tekst').val();
+                        if (input.length < 2) {
+                            $('.btn.search-go').prop('disabled', true);
+                        } else {
+                            $('.btn.search-go').prop('disabled', false);
+                        }
+                        return false;
                     }
-                    return false;
-                }
                 </script>
             </div>
         </div>
@@ -44,19 +44,38 @@ Template Name: News pagina
             <?php
             $args = array('post_status' => "publish", 'post_type' => "nieuws", 'orderby' => "date", 'posts_per_page' => 1);
             $lastposts = get_posts($args);
+
+            // If there's content, it means the new Gutenberg editor is used.
+            ob_start();
+            the_content();
+            $content = trim(ob_get_clean());
+
+            $newsImage = get_field('nieuws_afbeelding');
+
+            // Try to find the first image in the contents.
+            if (!$newsImage && $content) {
+                $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*?>/i', $content, $matches);
+                if ($output) {
+                    $image_url = $matches[1][0];
+                    if ($image_url) {
+                        $newsImage = ['url' => $image_url];
+                    }
+                }
+            }
+
             foreach ($lastposts as $post) : setup_postdata($post); ?>
 
                 <div class="col-xs-12 col-sm-8">
                     <div class="news-item-previeuw">
                         <h3><?php the_title(); ?></h3>
-                        <p class="post-publish-date">Gepubliceerd op <?php the_time( 'j F, Y' ); ?>.</p>
+                        <p class="post-publish-date">Gepubliceerd op <?php the_time('j F, Y'); ?>.</p>
                         <p><?php the_field('nieuws_tekst'); ?></p>
                         <a class="btn" href="<?php the_permalink(); ?>">lees verder</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="news-item-image"
-                         style="background-image:url('<?php the_field('nieuws_afbeelding'); ?>')">
+                         style="background-image:url('<?php echo $newsImage ? $newsImage['url'] : ''; ?>')">
                     </div>
                 </div>
 
@@ -79,9 +98,29 @@ Template Name: News pagina
             if ($nieuws->have_posts()) {
                 while ($nieuws->have_posts()) {
                     $nieuws->the_post();
+
+                    // If there's content, it means the new Gutenberg editor is used.
+                    ob_start();
+                    the_content();
+                    $content = trim(ob_get_clean());
+
+                    $newsImage = get_field('nieuws_afbeelding');
+
+                    // Try to find the first image in the contents.
+                    if (!$newsImage && $content) {
+                        $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*?>/i', $content, $matches);
+                        if ($output) {
+                            $image_url = $matches[1][0];
+                            if ($image_url) {
+                                $newsImage = ['url' => $image_url];
+                            }
+                        }
+                    }
+
                     ?>
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="news-item" style="background:url('<?php the_field('nieuws_afbeelding'); ?>')">
+                        <div class="news-item"
+                             style="background:url('<?php echo $newsImage ? $newsImage['url'] : ''; ?>')">
                             <div class="news-item-title">
                                 <h3><?php the_title(); ?></h3>
                             </div>

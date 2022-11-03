@@ -10160,6 +10160,7 @@ section h2 {
 
 .post-publish-date-single {
   font-style: italic;
+  margin-bottom: 1.5em;
 }
 
 @media (max-width: 600px) {

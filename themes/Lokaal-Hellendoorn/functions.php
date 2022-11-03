@@ -1,5 +1,8 @@
 <?php
 
+// Gutenberg full document width.
+add_theme_support( 'align-wide' );
+
 // Register Custom Post Type
 function nieuws_post_type() {
 
@@ -34,7 +37,7 @@ function nieuws_post_type() {
         'label' => __('Product', 'text_domain'),
         'description' => __('Product informatie', 'text_domain'),
         'labels' => $labels,
-        'supports' => array('title', 'editor', 'thumbnail',),
+        //'supports' => array('title', 'editor', 'thumbnail',),
         'hierarchical' => false,
         'public' => true,
         'publicly_queriable' => true,
@@ -48,8 +51,10 @@ function nieuws_post_type() {
         'has_archive' => false,
         'exclude_from_search' => false,
         'capability_type' => 'post',
-        'with_front' => false
-
+        'with_front' => false,
+        // Enable Gutenberg block-editor.
+        // https://www.cloudways.com/blog/gutenberg-wordpress-custom-post-type/
+        'show_in_rest' => true
     );
     register_post_type('nieuws', $args);
 
@@ -58,7 +63,7 @@ function nieuws_post_type() {
 add_action('init', 'nieuws_post_type', 0);
 
 
-//Remove menu items
+// Remove menu items.
 function remove_menus() {
     remove_menu_page('edit-comments.php');          //Comments
     remove_menu_page('edit.php');                   //Posts
