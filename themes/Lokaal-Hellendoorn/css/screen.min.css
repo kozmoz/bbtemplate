@@ -10133,6 +10133,58 @@ section h2 {
   width: auto !important;
 }
 
+.wp-block-cover > span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.has-background-dim {
+  opacity: 0.5;
+}
+
+.wp-block-cover .has-background-dim-10 {
+  opacity: 0.1;
+}
+
+.wp-block-cover .has-background-dim-20 {
+  opacity: 0.2;
+}
+
+.wp-block-cover .has-background-dim-30 {
+  opacity: 0.3;
+}
+
+.wp-block-cover .has-background-dim-40 {
+  opacity: 0.4;
+}
+
+.wp-block-cover .has-background-dim-50, .wp-block-cover .has-background-dim {
+  opacity: 0.5;
+}
+
+.wp-block-cover .has-background-dim-60 {
+  opacity: 0.6;
+}
+
+.wp-block-cover .has-background-dim-70 {
+  opacity: 0.7;
+}
+
+.wp-block-cover .has-background-dim-80 {
+  opacity: 0.8;
+}
+
+.wp-block-cover .has-background-dim-90 {
+  opacity: 0.9;
+}
+
 .wp-block-media-text figure {
   max-width: 500px;
 }

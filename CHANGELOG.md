@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2023-01-10 - Version 1.6.2
+--------------------------
+* Bugfix / Improvement: Added missing CSS for block-cover overlay.
+
 2022-11-03 - Version 1.6.1
 ---------------------------
 * Improvement: Show "excerpt" in news overview for first news item.
