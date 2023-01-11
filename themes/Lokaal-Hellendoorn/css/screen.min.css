@@ -10145,43 +10145,43 @@ section h2 {
   z-index: 1;
 }
 
-.has-background-dim {
+.wp-block-cover .has-background-dim {
   opacity: 0.5;
 }
 
-.has-background-dim-10 {
+.wp-block-cover .has-background-dim-10 {
   opacity: 0.1;
 }
 
-.has-background-dim-20 {
+.wp-block-cover .has-background-dim-20 {
   opacity: 0.2;
 }
 
-.has-background-dim-30 {
+.wp-block-cover .has-background-dim-30 {
   opacity: 0.3;
 }
 
-.has-background-dim-40 {
+.wp-block-cover .has-background-dim-40 {
   opacity: 0.4;
 }
 
-.has-background-dim-50 {
+.wp-block-cover .has-background-dim-50 {
   opacity: 0.5;
 }
 
-.has-background-dim-60 {
+.wp-block-cover .has-background-dim-60 {
   opacity: 0.6;
 }
 
-.has-background-dim-70 {
+.wp-block-cover .has-background-dim-70 {
   opacity: 0.7;
 }
 
-.has-background-dim-80 {
+.wp-block-cover .has-background-dim-80 {
   opacity: 0.8;
 }
 
-.has-background-dim-90 {
+.wp-block-cover .has-background-dim-90 {
   opacity: 0.9;
 }
 
